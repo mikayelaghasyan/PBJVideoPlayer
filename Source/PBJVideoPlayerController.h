@@ -65,6 +65,7 @@ typedef NS_ENUM(NSInteger, PBJVideoPlayerBufferingState) {
 
 - (void)playFromBeginning;
 - (void)playFromCurrentTime;
+- (void)playFromTime:(CMTime)time;
 - (void)pause;
 - (void)stop;
 
