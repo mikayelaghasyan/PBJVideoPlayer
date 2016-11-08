@@ -168,6 +168,10 @@ static NSString * const PBJVideoPlayerControllerReadyForDisplay = @"readyForDisp
     return maxDuration;
 }
 
+- (CMTime)currentTime {
+    return _playerItem.currentTime;
+}
+
 - (float)volume {
     return _player.volume;
 }
