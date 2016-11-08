@@ -390,6 +390,11 @@ static NSString * const PBJVideoPlayerControllerReadyForDisplay = @"readyForDisp
     [_player play];
 }
 
+- (void)playFromTime:(CMTime)time {
+    [_player seekToTime:time];
+    [self playFromCurrentTime];
+}
+
 - (void)pause
 {
     if (_playbackState != PBJVideoPlayerPlaybackStatePlaying)
